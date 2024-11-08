@@ -3,7 +3,7 @@
 <html lang="en" class="theme-fs-sm" data-bs-theme-color="default" dir="ltr">
 
 
-<!-- Mirrored from templates.iqonic.design/booksto-dist/html/spacial-pages/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Oct 2024 11:10:26 GMT -->
+<!-- Mirrored from templates.iqonic.design/booksto-dist/html/extra-pages/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Oct 2024 11:13:27 GMT -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,14 +43,15 @@
     <!-- font-awesome css -->
     <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
     
+     <!-- Flatpickr css -->
+     <link rel="stylesheet" href="assets/vendor/flatpickr/dist/flatpickr.min.css" />
     
+     <!-- Sweetlaert2 css -->
+     <link rel="stylesheet" href="assets/vendor/sweetalert2/dist/sweetalert2.min.css">
+     
     
-    
-    
-    
-    
-    
-    
+    <!-- SwiperSlider css -->
+    <link rel="stylesheet" href="assets/vendor/swiperSlider/swiper.min.css">
     
     
     <!-- booksto Design System Css -->
@@ -81,11 +82,49 @@
     <link rel="stylesheet" href="../assets/vendor/ionicons/css/ionicons.min.css" />
     
     <link rel="stylesheet" href="../assets/vendor/line-awesome/css/line-awesome.min.css" />
+
+    
+    <!-- booksto Design System Css -->
+    <link rel="stylesheet" href="assets/css/booksto.min5438.css?v=1.2.0" />
+    
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/custom.min5438.css?v=1.2.0" />
+    
+    <!-- RTL Css -->
+    <link rel="stylesheet" href="assets/css/rtl.min5438.css?v=1.2.0" />
+    
+    <!-- Customizer Css -->
+    <link rel="stylesheet" href="assets/css/customizer.min5438.css?v=1.2.0" />
     
     <!-- Phosphor icons  -->
     <link rel="stylesheet" href="../assets/vendor/phosphor-icons/Fonts/regular/style.css"></link>
     <link rel="stylesheet" href="../assets/vendor/phosphor-icons/Fonts/duotone/style.css"></link>
     <link rel="stylesheet" href="../assets/vendor/phosphor-icons/Fonts/fill/style.css"></link>
+    <style>
+        .video-container {
+            width: 700px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        p {
+            margin: 5px 0px
+        }
+
+        @media screen and (max-width: 800px) {
+            .video-container {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
     
 </head>
 
@@ -267,7 +306,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../admin/dashboard.html">
+                                    href="../dashboard.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Dashboard"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-gauge"></i>
@@ -282,7 +321,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../admin/category-list.html">
+                                    href="../category-list.html">
                                     <i class="icon" data-bs-toggle="tooltip"
                                         title="Category List" data-bs-placement="right">
                                         <i class="ph-duotone ph-list-plus"></i>
@@ -297,7 +336,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../admin/author.html">
+                                    href="../author.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Author"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-identification-badge"></i>
@@ -311,7 +350,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../admin/books.html">
+                                    href="../books.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Books"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-book-bookmark"></i>
@@ -360,7 +399,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="kanban.html">
+                                    href="../spacial-pages/kanban.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Kanban"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-record"></i>
@@ -374,7 +413,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="calender.html">
+                                    href="../spacial-pages/calender.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Calendar"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-calendar-blank"></i>
@@ -387,9 +426,9 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link "
                                     aria-current="page"
-                                    href="pricing.html">
+                                    href="../spacial-pages/pricing.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Pricing"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-tag"></i>
@@ -404,7 +443,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="invoice.html">
+                                    href="../spacial-pages/invoice.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Invoice"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-chat-centered"></i>
@@ -419,7 +458,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="timeline.html">
+                                    href="../spacial-pages/timeline.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Timneline"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-clock"></i>
@@ -584,7 +623,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../user/user-profile.html">
+                                    href="../user-profile.html">
                                     <i class="icon" data-bs-toggle="tooltip"
                                         title="User Profile" data-bs-placement="right">
                                         <i class="ph-duotone ph-identification-card"></i>
@@ -600,7 +639,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../user/user-edit.html">
+                                    href="../user-edit.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="User Edit"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-note-pencil"></i>
@@ -615,7 +654,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../user/user-add.html">
+                                    href="../user-add.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="User Add"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-plus-circle"></i>
@@ -630,7 +669,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../user/user-list.html">
+                                    href="../user-list.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="User List"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-rows"></i>
@@ -671,7 +710,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../extra-pages/errors/error404.html">
+                                    href="errors/error404.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Error 404"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-warning-octagon"></i>
@@ -687,7 +726,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../extra-pages/errors/error500.html">
+                                    href="errors/error500.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Error 500"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-warning-octagon"></i>
@@ -703,7 +742,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../extra-pages/errors/maintenance.html">
+                                    href="errors/maintenance.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Maintenance"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-archive"></i>
@@ -719,7 +758,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../extra-pages/coming-soon.html">
+                                    href="coming-soon.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Coming Soon"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-intersect"></i>
@@ -735,7 +774,7 @@
                                 <a
                                     class="nav-link "
                                     aria-current="page"
-                                    href="../extra-pages/faq.html">
+                                    href="faq.html">
                                     <i class="icon" data-bs-toggle="tooltip" title="Faq"
                                         data-bs-placement="right">
                                         <i class="ph-duotone ph-compass"></i>
@@ -976,9 +1015,9 @@
                 
                     <li class="nav-item">
                         <a
-                            class="nav-link "
+                            class="nav-link active"
                             aria-current="page"
-                            href="../extra-pages/blank-page.html">
+                            href="blank-page.html">
                             <i class="icon" data-bs-toggle="tooltip" title="Blank Page"
                                 data-bs-placement="right">
                                 <i class="ph-duotone ph-chalkboard-teacher"></i>
@@ -2334,7 +2373,7 @@
                                     </div>
                                  </div>
                                  <div class="p-0 card-body ">
-                                    <a class="iq-sub-card" href="../user/user-profile.html">
+                                    <a class="iq-sub-card" href="../user-profile.html">
                                        <div class="d-flex align-items-center">
                                           <div
                                              class="avatar-40 rounded-pill bg-primary-subtle text-primary  d-flex align-items-center justify-content-center ">
@@ -2347,7 +2386,7 @@
             
                                        </div>
                                     </a>
-                                    <a class="iq-sub-card" href="../user/user-edit.html">
+                                    <a class="iq-sub-card" href="../user-edit.html">
                                        <div class="d-flex align-items-center">
                                           <div
                                              class="avatar-40 rounded-pill bg-primary-subtle text-primary  d-flex align-items-center justify-content-center">
@@ -2360,7 +2399,7 @@
             
                                        </div>
                                     </a>
-                                    <a class="iq-sub-card" href="../user/user-account-setting.html">
+                                    <a class="iq-sub-card" href="../user-account-setting.html">
                                        <div class="d-flex align-items-center">
                                           <div
                                              class="avatar-40 rounded-pill bg-primary-subtle text-primary  d-flex align-items-center justify-content-center ">
@@ -2373,7 +2412,7 @@
             
                                        </div>
                                     </a>
-                                    <a class="iq-sub-card" href="../user/user-privacy-setting.html">
+                                    <a class="iq-sub-card" href="../user-privacy-setting.html">
                                        <div class="d-flex align-items-center">
                                           <div
                                              class="avatar-40 rounded-pill bg-primary-subtle text-primary  d-flex align-items-center justify-content-center">
@@ -2399,162 +2438,180 @@
             </nav>            <!--Nav End-->
         </div>
         <div class="content-inner container-fluid pb-0" id="page_layout">
-
-<div class="row">
-    <div class="col-lg-3 col-md-6">
-        <div class="card rounded-3">
-            <div class="card-body border text-center rounded-3">
-                <span class="text-uppercase">Basic</span>
-                <h2 class="display-3 mb-4 fw-bolder">
-                    $26<small class="text-muted fw-lighter fs-5">/ Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0">
-                    <li class="fs-5">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5">Consectetur adipiscing elit</li>
-                    <li class="fs-5">Integer molestie at massa</li>
-                    <li class="fs-5">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5">Nulla volutpat aliquam velit</li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-5">Start Starter</a>
-            </div>
+<div class="card">
+    <div class="card-body">
+        <h1>Men In Black 111</h1>
+        <div class="video-container">
+            <video controls autoplay>
+                <source src="../video.mp4" type="mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <p class="description">This is a brief description of the video content.</p>
+        <p><strong>Author:</strong> John Doe</p>
+        <p><strong>Duration:</strong> 20 min</p>
     </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card rounded-3 bg-primary text-white">
-            <div class="card-body border text-center rounded-3">
-                <span class="text-uppercase">Basic</span>
-                <h2 class="display-3 mb-4 fw-bolder text-white">
-                    $99<small class="fw-lighter fs-5">/ Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0">
-                    <li class="fs-5">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5">Consectetur adipiscing elit</li>
-                    <li class="fs-5">Integer molestie at massa</li>
-                    <li class="fs-5">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5">Nulla volutpat aliquam velit</li>
-                </ul>
-                <a href="#" class="btn btn-light mt-5">Start Starter</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card rounded-3">
-            <div class="card-body border text-center rounded-3">
-                <span class="text-uppercase">Basic</span>
-                <h2 class="display-3 mb-4 fw-bolder">
-                    $39<small class="text-muted fw-lighter fs-5">/ Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0">
-                    <li class="fs-5">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5">Consectetur adipiscing elit</li>
-                    <li class="fs-5">Integer molestie at massa</li>
-                    <li class="fs-5">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5">Nulla volutpat aliquam velit</li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-5">Start Starter</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card rounded-3">
-            <div class="card-body border text-center rounded-3">
-                <span class="text-uppercase">Basic</span>
-                <h2 class="display-3 mb-4 fw-bolder">
-                    $25<small class="text-muted fw-lighter fs-5">/ Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0">
-                    <li class="fs-5">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5">Consectetur adipiscing elit</li>
-                    <li class="fs-5">Integer molestie at massa</li>
-                    <li class="fs-5">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5">Nulla volutpat aliquam velit</li>
-                </ul>
-                <a href="#" class="btn btn-primary mt-5">Start Starter</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card bg-dark text-white text-center rounded-3">
-            <img src="../assets/images/page-img/25.jpg" alt="#" class="card-img rounded-3">
-            <div class="card-img-overlay">
-                <h2 class="mb-4 display-3 fw-bolder text-white">
-                    19<small class="fs-5 text-white">$ / Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0 ">
-                    <li class="fs-5 ">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5 ">Consectetur adipiscing elit</li>
-                    <li class="fs-5 ">Integer molestie at massa</li>
-                    <li class="fs-5 ">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5 ">Nulla volutpat aliquam velit</li>
-                </ul>
-                <button type="button" class="btn btn-primary mt-4">Get started</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card bg-dark text-white text-center rounded-3">
-            <img src="../assets/images/page-img/26.jpg" alt="#" class="card-img rounded-3">
-            <div class="card-img-overlay">
-                <h2 class="mb-4 display-3 fw-bolder text-white">
-                    19<small class="fs-5 text-white">$ / Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0 ">
-                    <li class="fs-5 ">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5 ">Consectetur adipiscing elit</li>
-                    <li class="fs-5 ">Integer molestie at massa</li>
-                    <li class="fs-5 ">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5 ">Nulla volutpat aliquam velit</li>
-                </ul>
-                <button type="button" class="btn btn-primary mt-4">Get started</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card bg-dark text-white text-center rounded-3">
-            <img src="../assets/images/page-img/27.jpg" alt="#" class="card-img rounded-3">
-            <div class="card-img-overlay">
-                <h2 class="mb-4 display-3 fw-bolder text-white">
-                    19<small class="fs-5 text-white">$ / Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0 ">
-                    <li class="fs-5 ">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5 ">Consectetur adipiscing elit</li>
-                    <li class="fs-5 ">Integer molestie at massa</li>
-                    <li class="fs-5 ">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5 ">Nulla volutpat aliquam velit</li>
-                </ul>
-                <button type="button" class="btn btn-primary mt-4">Get started</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <div class="card bg-dark text-white text-center rounded-3">
-            <img src="../assets/images/page-img/28.jpg" alt="#" class="card-img rounded-3">
-            <div class="card-img-overlay">
-                <h2 class="mb-4 display-3 fw-bolder text-white">
-                    19<small class="fs-5 text-white">$ / Month</small>
-                </h2>
-                <ul class="list-unstyled mb-0 ">
-                    <li class="fs-5 ">Lorem ipsum dolor sit amet</li>
-                    <li class="fs-5 ">Consectetur adipiscing elit</li>
-                    <li class="fs-5 ">Integer molestie at massa</li>
-                    <li class="fs-5 ">Facilisis in pretium nisl aliquet</li>
-                    <li class="fs-5 ">Nulla volutpat aliquam velit</li>
-                </ul>
-                <button type="button" class="btn btn-primary mt-4">Get started</button>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card rounded-3">
+                <div class="card-header d-flex justify-content-between align-items-center position-relative">
+                    <div class="iq-header-title">
+                        <h4 class="mb-0">Student also watch this videos</h4>
+                    </div>
+                    <div class="iq-card-header-toolbar d-flex align-items-center">
+                        <a href="shop/all-videos.html" class="btn btn-primary view-more">View More</a>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="position-relative swiper-container swiper swiper-card h-50" data-slide="3" data-laptop="3"
+                        data-tab="2" data-mobile="1" data-mobile-sm="1" data-autoplay="true" data-loop="true"
+                        data-navigation="true" data-pagination="true">
+                        <ul class="p-0 swiper-wrapper m-0 list-inline favorite-slider">
+                            <li class="swiper-slide p-4">
+                                <div class=" ">
+                                    <div class=" p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class=" position-relative p-0 img-shadow ">
+                                                <a href="javascript:void();" tabindex="-1" class="">
+                                                    <img src="../assets/images/favorite/01.jpg" class="img-fluid rounded w-100" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-3">
+                                                <h4 class="mb-1 line-clip-2">Every Book is a new Wonderful Travel..</h4>
+                                                <!-- <a class=" mb-1 line-clip-1">Author : Pedro Araez</a> -->
+                                
+                                
+                                                <div class="iq-progress-bar-linear d-inline-block w-100">
+                                                    <div class="d-flex justify-content-between align-items-center text-dark font-size-13">
+                                                        <span>Watch by</span>
+                                                        <span class="me-4">78%</span>
+                                                    </div>
+                                                    <div class="progress" style="height: 6px">
+                                                        <div class="progress-bar bg-info" data-toggle="progress-bar" role="progressbar"
+                                                            style="width: 78" aria-valuenow="78" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                
+                                                <a href="#" class="text-dark read-now " tabindex="-1">Watch Now<i class="ri-arrow-right-s-line"></i>
+                                                </a>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide p-4">
+                                <div class=" ">
+                                    <div class=" p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class=" position-relative p-0 img-shadow ">
+                                                <a href="javascript:void();" tabindex="-1" class="">
+                                                    <img src="../assets/images/favorite/02.jpg" class="img-fluid rounded w-100" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-3">
+                                                <h4 class="mb-1 line-clip-2">Casey Christie night book into find...</h4>
+                                                <a class=" mb-1 line-clip-1">Author : Michael klock</a>
+                                
+                                
+                                                <div class="iq-progress-bar-linear d-inline-block w-100">
+                                                    <div class="d-flex justify-content-between align-items-center text-dark font-size-13">
+                                                        <span>Watch by</span>
+                                                        <span class="me-4">78%</span>
+                                                    </div>
+                                                    <div class="progress" style="height: 6px">
+                                                        <div class="progress-bar bg-warning" data-toggle="progress-bar" role="progressbar"
+                                                            style="width: 78" aria-valuenow="78" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                
+                                                <a href="#" class="text-dark read-now " tabindex="-1">Watch Now<i class="ri-arrow-right-s-line"></i>
+                                                </a>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide p-4">
+                                <div class=" ">
+                                    <div class=" p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class=" position-relative p-0 img-shadow ">
+                                                <a href="javascript:void();" tabindex="-1" class="">
+                                                    <img src="../assets/images/favorite/03.jpg" class="img-fluid rounded w-100" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-3">
+                                                <h4 class="mb-1 line-clip-2">The Secret to English Busy People..</h4>
+                                                <a class=" mb-1 line-clip-1">Author : Daniel Ace</a>
+                                
+                                
+                                                <div class="iq-progress-bar-linear d-inline-block w-100">
+                                                    <div class="d-flex justify-content-between align-items-center text-dark font-size-13">
+                                                        <span>Watch by</span>
+                                                        <span class="me-4">78%</span>
+                                                    </div>
+                                                    <div class="progress" style="height: 6px">
+                                                        <div class="progress-bar bg-success" data-toggle="progress-bar" role="progressbar"
+                                                            style="width: 78" aria-valuenow="78" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                
+                                                <a href="#" class="text-dark read-now " tabindex="-1">Watch Now<i class="ri-arrow-right-s-line"></i>
+                                                </a>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide p-4">
+                                <div class=" ">
+                                    <div class=" p-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class=" position-relative p-0 img-shadow ">
+                                                <a href="javascript:void();" tabindex="-1" class="">
+                                                    <img src="../assets/images/favorite/04.jpg" class="img-fluid rounded w-100" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="col-6 px-3">
+                                                <h4 class="mb-1 line-clip-2">The adventures of Robins books...</h4>
+                                                <a class=" mb-1 line-clip-1">Author : Luka Afton</a>
+                                
+                                
+                                                <div class="iq-progress-bar-linear d-inline-block w-100">
+                                                    <div class="d-flex justify-content-between align-items-center text-dark font-size-13">
+                                                        <span>Watch by</span>
+                                                        <span class="me-4">78%</span>
+                                                    </div>
+                                                    <div class="progress" style="height: 6px">
+                                                        <div class="progress-bar bg-danger" data-toggle="progress-bar" role="progressbar"
+                                                            style="width: 78" aria-valuenow="78" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                
+                                                <a href="#" class="text-dark read-now " tabindex="-1">Watch Now<i class="ri-arrow-right-s-line"></i>
+                                                </a>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
         </div>
         <!-- Footer Section Start -->
         <footer class="footer">
           <div class="footer-body">
             <ul class="left-panel list-inline mb-0 p-0">
-              <li class="list-inline-item fw-500"><a class="footer-link" href="../extra-pages/privacy-policy.html">Privacy
+              <li class="list-inline-item fw-500"><a class="footer-link" href="privacy-policy.html">Privacy
                   Policy</a></li>
-              <li class="list-inline-item fw-500"><a class="footer-link" href="../extra-pages/terms-of-service.html">Terms
+              <li class="list-inline-item fw-500"><a class="footer-link" href="terms-of-service.html">Terms
                   of Use</a></li>
             </ul>
             <h6 class="right-panel mb-0">
@@ -3032,6 +3089,20 @@
     
     
     
+        
+    <!-- Sweet-alert Script -->
+    <script src="assets/vendor/sweetalert2/dist/sweetalert2.min.js" async></script>
+    <script src="assets/js/plugins/sweet-alert.js" defer></script>
+    
+    
+    <!-- Select2 Script -->
+    <script src="assets/js/plugins/select2.js" defer></script>
+    
+    
+    
+    <!-- SwiperSlider Script -->
+    <script src="assets/vendor/swiperSlider/swiper.min.js"></script>
+    
     
     
     
@@ -3056,6 +3127,20 @@
     
     
     
+    
+        
+    
+    <!-- Flatpickr Script -->
+    <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="assets/js/plugins/flatpickr.js" defer></script>
+    
+    
+    <!-- Select2 Script -->
+    <script src="assets/js/plugins/select2.js" defer></script>
+    
+    <!-- Sweet-alert Script -->
+    <script src="assets/vendor/sweetalert2/dist/sweetalert2.min.js" async></script>
+    <script src="assets/js/plugins/sweet-alert.js" defer></script>
     
     
     
@@ -3107,5 +3192,5 @@
 </body>
 
 
-<!-- Mirrored from templates.iqonic.design/booksto-dist/html/spacial-pages/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Oct 2024 11:10:30 GMT -->
+<!-- Mirrored from templates.iqonic.design/booksto-dist/html/extra-pages/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Oct 2024 11:13:27 GMT -->
 </html>
