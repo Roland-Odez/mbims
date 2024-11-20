@@ -155,7 +155,7 @@ $(".delete-btn").on("click", function () {
 $(".wishlist-btn").on("click", function () {
     Swal.fire(
         'Added!',
-        'Your item has been Added to the wishlist.',
+        'Your item has been Added to favorite.',
         'success'
     )
 })
@@ -163,7 +163,7 @@ $(".wishlist-btn").on("click", function () {
 $(".cart-btn").on("click", function () {
     Swal.fire(
         'Added!',
-        'Your item has been Added to the cart.',
+        'Your item has been saved for later.',
         'success'
     )
 })

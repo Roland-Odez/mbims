@@ -101,6 +101,31 @@
     <link rel="stylesheet" href="assets/vendor/phosphor-icons/Fonts/duotone/style.css"></link>
     <link rel="stylesheet" href="assets/vendor/phosphor-icons/Fonts/fill/style.css"></link>
     <style>
+        .unchecked {
+            width: 70px;
+            height: 70px;
+            background-color: #f4b44b;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            z-index: 2;
+        }
+
+        .unchecked i {
+            color: white;
+            font-size: 30px;
+        }
+
+        .audio-detail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
         .video-container {
             width: 700px;
             height: 450px;
@@ -123,6 +148,15 @@
                 width: 100%;
                 height: 300px;
             }
+
+            .unchecked {
+                width: 50px;
+                height: 50px;
+            }
+
+            .audio-detail h3 {
+            font-size: 16px;
+        }
         }
 
         .image-container {
@@ -167,6 +201,33 @@
             display: none;
         }
     </style>
+    <style>
+        .audio-player {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: Arial, sans-serif;
+        }
+
+        .audio-container {
+            margin-top: 50px;
+        }
+        .progress-bar {
+          width: 100%;
+          height: 5px;
+          background-color: #ccc;
+          position: relative;
+          cursor: pointer;
+        }
+        .progress {
+          height: 100%;
+          width: 0%;
+          background-color: #007bff;
+        }
+        .time {
+          font-size: 12px;
+        }
+      </style>
     
 </head>
 
@@ -622,7 +683,7 @@
                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                <div class="icon-50">
                                   <span class="btn-inner d-inline-block position-relative">
-                                     <img src="assets/images/avatars/1.jpg"
+                                     <img src="assets/images/avatars/default.jpg"
                                         class="img-fluid rounded-circle object-fit-cover avatar-50" alt="icon">
                                      <span
                                         class="bg-success p-1 rounded-circle position-absolute end-0 bottom-0 border border-3 border-white"></span>
@@ -697,18 +758,32 @@
         <div class="content-inner container-fluid pb-0" id="page_layout">
             <div class="card">
                 <div class="image-container">
-                    <!-- <img src="assets//images/library-books.jpg" alt="library books" > -->
-                     <p>Audio Books For You</p>
+                    <p>Audio Books For You</p>
+                    
+                    <div id="playBtn" class="unchecked ">
+                        <i class="ph-fill ph-play"></i>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h3>🎵🎵 In The New Day 🎵🎵</h3>
+                <div class="card-body audio-detail">
+                    <div>
+                        <h3>🎵🎵 In The New Day 🎵🎵</h3>
+                        <h3><span>duration:</span> <span id="duration">0:00</span> mins</h3>
+                        <div class="audio-container">
+                            <audio id="audio" controls>
+                                <source src="audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                              </audio>
+
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card rounded-3">
                             <div class="card-header d-flex justify-content-between align-items-center position-relative">
                                 <div class="iq-header-title">
-                                    <h4 class="mb-0">Student also watch this videos</h4>
+                                    <h4 class="mb-0">Other EAudios</h4>
                                 </div>
                                 <div class="iq-card-header-toolbar d-flex align-items-center">
                                     <a href="shop/all-videos.html" class="btn btn-primary view-more">View More</a>
@@ -869,7 +944,7 @@
             <h6 class="right-panel mb-0">
               ©
               <script>document.write(new Date().getFullYear())</script>
-              <span data-setting="app_name">Booksto</span>
+              <span data-setting="app_name">MBIMS-LIBRARY</span>
               with
               <span class="text-danger">
                 <svg class="icon-16" width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -885,6 +960,10 @@
         </footer>
         <!-- Footer Section End -->    
     </main>
+
+    
+                    
+    <script src="assets/js/audio.js"></script>
 
     <!-- Library Bundle Script -->
     <script src="assets/js/core/libs.min.js"></script>

@@ -92,7 +92,22 @@
     <link rel="stylesheet" href="assets/vendor/phosphor-icons/Fonts/regular/style.css"></link>
     <link rel="stylesheet" href="assets/vendor/phosphor-icons/Fonts/duotone/style.css"></link>
     <link rel="stylesheet" href="assets/vendor/phosphor-icons/Fonts/fill/style.css"></link>
-    
+    <style>
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1.7rem 0;
+        }
+
+        @media screen and (max-width: 500px){
+            .heading h1, .heading h3 {
+                font-size: 110%;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body class="  ">
@@ -556,7 +571,7 @@
                               id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               <div class="icon-50">
                                  <span class="btn-inner d-inline-block position-relative">
-                                    <img src="assets/images/avatars/1.jpg"
+                                    <img src="assets/images/avatars/default.jpg"
                                        class="img-fluid rounded-circle object-fit-cover avatar-50" alt="icon">
                                     <span
                                        class="bg-success p-1 rounded-circle position-absolute end-0 bottom-0 border border-3 border-white"></span>
@@ -629,13 +644,17 @@
             </nav>            <!--Nav End-->
         </div>
         <div class="content-inner container-fluid pb-0" id="page_layout">
+            <div class="heading">
+                <h1>Explore Our Collection</h1>
+                <h3>Discover Books Across All Categories</h3>
+            </div>
             <div class="row">
                 <div class="col-lg-12 mb-5">
                     <div class="swiper-container mySwiper iq-width overflow-hidden mx-auto">
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide">
                                 <a href="./book-page.html">
-                                    <img class="img-fluid w-100 rounded" src="assets/images/swiper/01.jpg" alt="image" />
+                                    <img class="img-fluid w-100 rounded"  src="assets/images/swiper/01.jpg" alt="image" />
                                 </a>
                             </div>
                             <div class="swiper-slide">
@@ -691,7 +710,7 @@
                     <div class="d-flex w-full flex-md-row flex-column">
                         <div class="col-6 position-relative p-0 img-shadow">
                             <a href="javascript:void();" tabindex="-1" class="">
-                                <img src="assets/images/browse-books/01.jpg" class="img-fluid rounded w-100" alt="" />
+                                <img style="width: 100%;" src="assets/images/browse-books/01.jpg" class="img-fluid rounded w-100" alt="" />
                             </a>
                             <div class="view-book">
                                 <a href="book-page.html" class="btn view-book-btn">View Book</a>
@@ -702,6 +721,13 @@
                                 book
                                 </h4>
                             <a class="font-size-13 mb-1 line-clip-1">Gurt Mistrioty</a>
+                            <div class="iq-product-action">
+                                <a href="javascript:void();" class="btn btn-small-icon fs-1 cart-btn bg-primary-subtle">
+                                    <i class=" ri-shopping-cart-2-fill text-primary fs-5"></i></a>
+                                <a href="javascript:void();" class="btn btn-small-icon ms-2 fs-1 wishlist-btn bg-danger-subtle">
+                                    <i class=" ri-heart-fill text-danger fs-5"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -943,47 +969,103 @@
                     <div class="card rounded-3">
                         <div class="card-header d-flex justify-content-between align-items-center position-relative">
                             <div class="iq-header-title">
-                                <h4 class="mb-0">Featured Books</h4>
+                                <h4 class="mb-0">EVideos</h4>
                             </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                    style="background-color: transparent; border: none;">
-                                    This Week
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item d-flex align-items-center gap-1" href="#"><i
-                                                class="ph ph-eye mr-2"></i> View</a></li>
-                                    </li>
-                                </ul>
+                            <div class="iq-card-header-toolbar d-flex align-items-center">
+                                <a href="all-videos.html" class="btn btn-primary view-more">View More</a>
                             </div>
                         </div>
-                        <div class="p-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-5 ">
-                                    <a href="javascript:void();" tabindex="-1">
-                                        <img src="assets/images/page-img/featured-book.png" class="img-fluid rounded w-100"
-                                            alt="" />
-                                    </a>
-                                </div>
-                                <div class="col-sm-7 ">
-                                    <h4 class="mb-2 mt-2 mt-md-0 ">Casey Christie night book into find...</h4>
-                                    <p class="mb-2">Author: Gheg origin</p>
-                                    <div class="mb-2 ">
-                                        <span class="font-size-12 text-warning">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </span>
+                        <div class="card-body">
+                            <div class=" row mb-0  align-items-center overflow-auto" style="max-height: 380px;">
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
                                     </div>
-                                    <span class="text-dark mb-3 d-block">Lorem Ipsum is simply dummy test in find a of the printing
-                                        and typeset ing industry into end.</span>
-                                    <button type="submit" class="btn btn-primary ">Learn More</button>
-                                </div>
-
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
+                                <a href="view-video.html" class="col-sm-6 d-flex mb-3 align-items-center">
+                                    <div class="me-3">
+                                        <img src="assets/images/video-default.png" alt=""
+                                            class="img-fluid avatar-60" style="object-fit: cover;">
+                                    </div>
+                                    <div class="mt-1">
+                                        <h6 class="mb-0">Video title</h6>
+                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
+                                        <small class="mb-0" style="display: block;"><b>1:18min</b></small>
+                                    </div>
+                                </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -994,43 +1076,12 @@
                             <div class="iq-header-title">
                                 <h4 class="mb-0">AudioBooks</h4>
                             </div>
-                            <div class="dropdown">
-                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                    style="background-color: transparent; border: none;">
-                                    This Week
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item d-flex align-items-center gap-1" href="category-page.html"><i
-                                                class="ph ph-eye mr-2"></i> View More</a></li>
-                                </ul>
+                            <div class="iq-card-header-toolbar d-flex align-items-center">
+                                <a href="all-audios.html" class="btn btn-primary view-more">View More</a>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class=" row mb-0  align-items-center overflow-auto" style="max-height: 380px;">
-                                <a href="audio-page.html" class="col-sm-6 d-flex mb-3 align-items-center">
-                                    <div class="me-3">
-                                        <img src="assets/images/audiobook-cover.jpg" alt=""
-                                            class="img-fluid avatar-60 rounded-circle">
-                                    </div>
-                                    <div class="mt-1">
-                                        <h6 class="mb-0">Inner Peace</h6>
-                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
-                                        <small class="mb-0" style="display: block;"><b>25hr 18min</b></small>
-                                    </div>
-
-                                </a>
-                                <a href="audio-page.html" class="col-sm-6 d-flex mb-3 align-items-center">
-                                    <div class="me-3">
-                                        <img src="assets/images/audiobook-cover.jpg" alt=""
-                                            class="img-fluid avatar-60 rounded-circle">
-                                    </div>
-                                    <div class="mt-1">
-                                        <h6 class="mb-0">Inner Peace</h6>
-                                        <!-- <small class="mb-0">Brandon Guidelines</small> -->
-                                        <small class="mb-0" style="display: block;"><b>25hr 18min</b></small>
-                                    </div>
-
-                                </a>
                                 <a href="audio-page.html" class="col-sm-6 d-flex mb-3 align-items-center">
                                     <div class="me-3">
                                         <img src="assets/images/audiobook-cover.jpg" alt=""
@@ -1296,7 +1347,7 @@
             <h6 class="right-panel mb-0">
               ©
               <script>document.write(new Date().getFullYear())</script>
-              <span data-setting="app_name">Booksto</span>
+              <span data-setting="app_name">MBIMS-LIBRARY</span>
               with
               <span class="text-danger">
                 <svg class="icon-16" width="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
